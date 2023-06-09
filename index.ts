@@ -430,6 +430,7 @@ addTwelve(1, 2);
 
 // 13、函数作为参数值、变量值或对象方法时的类型
 // > 定义了一个箭头函数类型的变量
+// > 只是规定了函数是箭头函数和参数的类型（具体箭头函数的逻辑操作需要在调用时进行编辑）
 type RequestCallback13 = (result: string) => void;
 
 function request13(callback: RequestCallback13) {
@@ -477,7 +478,7 @@ let strTwo = str as string;
 let strThree = <string>str;
 
 // 17、泛型的使用
-// 17-1）泛型函数（给函数添加泛型
+// 17-1）给函数添加泛型
 function join<T>(arr1: T[], arr2: T[]): T[] {
     return [...arr1, ...arr2];
 }

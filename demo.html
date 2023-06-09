@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.breathing-light {
+				width: 100px;
+				height: 100px;
+				background-color: #ff0000;
+				border-radius: 50%;
+				animation: breathe 2s infinite;
+			}
+
+			@keyframes breathe {
+				0% {
+					box-shadow: 0 0 5px #ff0000;
+					opacity: 0;
+				}
+				50% {
+					box-shadow: 0 0 20px #ff0000;
+					opacity: 1;
+				}
+				100% {
+					box-shadow: 0 0 5px #ff0000;
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="breathing-light"></div>
+	</body>
+</html>
